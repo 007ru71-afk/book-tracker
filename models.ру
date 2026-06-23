@@ -1,0 +1,15 @@
+from dataclasses import dataclass, asdict
+
+@dataclass
+class Book:
+    author: str
+    title: str
+    rating: int
+    read_date: str
+
+    def to_dict(self):
+        return asdict(self)
+
+    @staticmethod
+    def from_dict(data):
+        return Book(**data)
