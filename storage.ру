@@ -34,4 +34,4 @@ def delete_book(title):
         return False, "Книга не найдена"
     save_books(books)
     return True, "Книга удалена"
-# Проверка на дубликаты реализована. Closes #2
+# Задача решена. Закрываю Issue #2
